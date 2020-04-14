@@ -5,8 +5,6 @@ services:
     image: django_app
     build: 
       context: myapp
-    ports:
-      - "8080:8080"
     networks:
       - net
   proxy:
