@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   myapp:
-    container_name: myapp
+    container_name: django_app
     image: django_app
     build: 
       context: myapp
@@ -10,7 +10,7 @@ services:
     networks:
       - net
   proxy:
-    container_name: proxy
+    container_name: django_app
     image: nginx_proxy
     build:
       context: proxy
