@@ -10,7 +10,7 @@ services:
     networks:
       - net
   proxy:
-    container_name: django_app
+    container_name: nginx_proxy
     image: nginx_proxy
     build:
       context: proxy
